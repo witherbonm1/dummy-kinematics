@@ -1,0 +1,32 @@
+schema_version = "1.0.0"
+
+# Identity ----------------------------------------------------------
+id = "dummy_kinematics"
+version = "1.7.0"
+name = "Dummy Kinematics"
+tagline = "Pose-blending pseudo-IK using user-recorded reference poses"
+type = "add-on"
+
+# Authorship --------------------------------------------------------
+# Replace email + website before submitting. Maintainer must be a real
+# contact the Extensions reviewers can reach.
+maintainer = "Jordan <CHANGE_ME@example.com>"
+website = "https://github.com/CHANGE_ME/dummy-kinematics"
+
+# License -----------------------------------------------------------
+# Required for Blender extensions; SPDX identifier(s) only.
+license = ["SPDX:GPL-2.0-or-later"]
+
+# Compatibility -----------------------------------------------------
+blender_version_min = "5.0.0"
+
+# Discovery ---------------------------------------------------------
+# Pick from the Extensions Platform's controlled tag list:
+# https://extensions.blender.org/about/tags/
+tags = ["Animation", "Rigging"]
+
+# Permissions -------------------------------------------------------
+# DK reads/writes JSON preset files via the file picker (Save Preset /
+# Load Preset). Declaring this satisfies the review checklist.
+[permissions]
+files = "Read and write Dummy Kinematics preset JSON files chosen via the file dialog"
